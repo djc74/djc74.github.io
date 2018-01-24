@@ -1,1 +1,119 @@
-hello world
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>David Cooper's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <script src="app.js" charset="utf-8"></script>
+    <script src="https://use.fontawesome.com/a09b011f7d.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="banner">
+        <img src="./images/legome.jpeg" class="main">
+        <h1 class="heading"><strong>David<br>Cooper</strong></h1>
+      </div>
+      <div class="row">
+        <div class="u-pull-right">
+          <h1 class="build">I build web stuff</h1>
+          <div class="buttons">
+            <a class="button" href="#About">About me</a>
+            <a class="button" href="#Projects">Projects</a>
+            <a class="button" href="#Contact">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <a name="About"></a>
+          <h2><strong>About me</strong></h2>
+          <h5>
+            I love creating things. I love solving problems. I love working to a deadline under pressure. I love breaking down a challenge into small steps which I can solve one by one. I love persevering with a difficult problem, trying a lot of different solutions and the eventual sense of achievement when I find the right one. I love coding.
+          </h5>
+      </div>
+      <div class="row">
+        <a name="Projects"></a>
+        <h2><strong>Projects</strong></h2>
+        <div class="row">
+          <div class="six columns project">
+              <h3 class="u-pull-left">Uplift</h3>
+              <div class="u-pull-right">
+                <a href="https://secret-oasis-31637.herokuapp.com/">
+                  <img src="./images/heroku.png" class="logolink">
+                </a>
+                <a href="https://github.com/djc74/WDI_PROJECT_4">
+                  <img src="./images/github.png" class="logolink">
+                </a>
+              </div>
+              <img src="./images/uplift.png" class="projectpic">
+            <h6>
+              For my final project, I wanted to make a site that gathered together reasons to be cheerful. Uplift displays jokes, quotes, gifs and pictures pulled in from APIs and allows logged in users to save ones they particularly like to their own page. They can also upload their own examples, with uploaded files stored on Amazon web services. I especially enjoyed using React on the front end, and making Axios requests to the APIs. After trying a lot of different CSS frameworks during the course, I used Skeleton on this one and found its minimal approach really suited me.
+            </h6>
+          </div>
+          <div class="six columns project">
+            <h3 class="u-pull-left">Gig.ly</h3>
+            <div class="u-pull-right">
+              <a href="https://gig-event-add-david.herokuapp.com/">
+                <img src="./images/heroku.png" class="logolink">
+              </a>
+              <a href="https://github.com/djc74/WDI_PROJECT_3">
+                <img src="./images/github.png" class="logolink">
+              </a>
+            </div>
+            <img src="./images/gig.png" class="projectpic">
+            <h6>
+              For our four-person group project, we built an app for people to plan trips to concerts together. We used the Ticketmaster API to provide a list of upcoming events in London, linked to Google Maps to show where the venue was, and the Spotify API to allow tracks from the artist to be played, as well as a chat forum.
+              I focused especially on the groups functionality, allowing people to set up groups for their friends and join groups already set up.
+              It was a real challenge getting the three APIs to work together, with Spotify especially tricky as we had to incorporate OAuth to allow users to log in and hear tracks, and the Spotify API was not very user-friendly.
+            </h6>
+          </div>
+        </div>
+          <div class="row">
+            <div class="six columns project">
+              <h3 class="u-pull-left">Monstergram</h3>
+              <div class="u-pull-right">
+                <a href="https://monster-gram.herokuapp.com/">
+                  <img src="./images/heroku.png" class="logolink">
+                </a>
+                <a href="https://github.com/djc74/WDI_PROJECT_2">
+                  <img src="./images/github.png" class="logolink">
+                </a>
+              </div>
+              <img src="./images/monster.png" class="projectpic">
+              <h6>
+                After I made a JavaScript game for my four-year-old son for my first project, my other son, who’s seven, wanted me to make something for him. He likes drawing pictures of dragons and monsters he’s made up, so for this project I created an app that would allow him to login, save these pictures and comment on them. Using MongoDB, Express, AngularJS and Node.js, I built a full-stack app that he’s rapidly filling with monstrous creations.
+              </h6>
+            </div>
+            <div class="six columns project">
+              <h3 class="u-pull-left">Feed The Monster!</h3>
+              <div class="u-pull-right">
+                <a href="https://polar-gorge-89968.herokuapp.com/">
+                  <img src="./images/heroku.png" class="logolink">
+                </a>
+                <a href="https://github.com/djc74/WDI_PROJECT_1">
+                  <img src="./images/github.png" class="logolink">
+                </a>
+              </div>
+              <img src="./images/feed.png" class="projectpic">
+              <h6>
+                When I asked my four-year-old son what game he would like me to make him, he said one where you have to feed sausages to a space monster to make him explode before he eats you. So using JQuery, HTML and CSS, I made a version of whack-a-mole with a space/sausages theme.
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row contact">
+        <a name="Contact"></a>
+          <h2><strong>Find me</strong></h2>
+          <a href="https://github.com/djc74">
+            <i class="fa fa-github fa-4x" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/davidcooper974/">
+            <i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i>
+          </a>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
