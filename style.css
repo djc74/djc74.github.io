@@ -3,39 +3,42 @@
   box-sizing: border-box;
   }
 
-  html {
+html {
     background: url(images/backgrounds/white.jpg) no-repeat center center fixed;
     background-size: cover;
   }
 
 .main {
   max-width: 100%;
+  margin-bottom: 100px;
 }
 
 .banner {
   position: relative;
   text-align: right;
   color: white;
-  margin-top: 5%;
 }
 
 .heading {
   position: absolute;
-  bottom: 30%;
+  top: 15%;
   right: 20px;
-  font-size: 8.5rem;
+  max-width: 50%;
+}
+
+.name {
+  font-size: 12rem;
+  line-height: 90%;
+  margin-bottom: 50px;
 }
 
 .build {
   font-size: 6rem;
 }
 
-.buttons {
-  margin: 10px 10px 50px 10px;
-}
-
 a.button {
   background-color: white;
+  margin-left: 10px;
 }
 
 .project {
@@ -64,4 +67,37 @@ a.button {
 i {
   margin: 0 10px 10px 10px;
   color: black;
+}
+
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.1);
+}
+
+.hvr-grow-rotate {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow-rotate:hover, .hvr-grow-rotate:focus, .hvr-grow-rotate:active {
+  -webkit-transform: scale(1.1) rotate(4deg);
+  transform: scale(1.1) rotate(4deg);
 }
