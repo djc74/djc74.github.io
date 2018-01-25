@@ -101,3 +101,9 @@ i {
   -webkit-transform: scale(1.1) rotate(4deg);
   transform: scale(1.1) rotate(4deg);
 }
+
+footer {
+  text-align: center;
+  background-color: rgba(0, 0, 0, .3);
+  color: white;
+}
